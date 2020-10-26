@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang = en>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rainbow Seven Siege |  Pre-Order</title>
+        <link rel="stylesheet" href="../CSS/preorderstyle.css">
+        <script src="http://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous"></script>
+        <script src="../Jquery/pre-order.js"></script>
+    </head>
+
+    <body>
+        <div>
+            <div class="company_logo">
+                <img src="../../Assets/homepage/ubipost logo.png" alt="ubipost logo">
+            </div>
+        </div>
+
+        <nav>
+            <div class="logo">
+                <img class="r7s-logo" src="../../Assets/homepage/R7S Logo.png">
+            </div>
+
+            <ul class="navbar-item">
+                <li class="home"> 
+                    <a href="../../Page Home/HTML/PageHome.html">
+                        Home
+                    </a>
+                </li>
+
+                <li class="operator">
+                    <a href="#">
+                        Operators
+                    </a>
+                    <ul class="operator-content">
+                        <li class="attacker">
+                            <div>
+                                <img src="../../Assets/homepage/attack logo.png">
+                                <!-- ketika kita mengklik kata line baru akan berpindah bukan menunya -->
+                                <a href="../../Page Operators/HTML/Page Attacker.html">Attacker</a>
+                            </div>
+                        </li>
+                        <li class="defender">
+                            <div>
+                                <img src="../../Assets/homepage/defend logo.png">
+                                <a href="../../Page Operators/HTML/Page Defender.html">Defender</a>   
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="maps">
+                    <a href="#">
+                        Maps
+                    </a>
+                    <ul class="map-content">
+                        <li class="quick-match">
+                            <a href="../../Page Maps/HTML/Quick match.html">Quick Match</a>
+                        </li>
+                        <li class="ranked-match">
+                            <a href="../../Page Maps/HTML/Ranked match.html">Ranked Match</a>
+                        </li>
+                        <li class="unranked-match">
+                            <a href="../../Page Maps/HTML/Unranked match.html">Unranked Match</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="quarantine">
+                    <a href="../../Page Quarantine/HTML/Page Quarantine.html">
+                        Quarantine
+                    </a>
+                </li>
+
+                <li class="pre-order">
+                    <a href="../HTML/Page Pre Order.html">
+                        Pre-Order
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="pre-order-form">
+            <h1 class="form-title">Pre Order Form</h1>
+
+            <div class="pre-order-list">
+                <h2 class="instruction">Pre Order here</h2>
+    
+                <form method="post" id="register" action="/">
+                    <label>Username :</label><br>
+                    <input type="text" name="username" id="name" placeholder="Enter your fullname" ><br><br>
+                
+                    <label>E-mail :</label><br>
+                    <input type="text" name="email" id="e-mail" placeholder="Enter your e-mail" ><br><br>
+
+                    <label>Password :</label><br>
+                    <input type="password" name="password" id="password" placeholder="Enter your password" ><br><br>
+    
+                    <label>Address :</label><br>
+                    <textarea type="text" name="address" id="address" placeholder="Enter your address" ></textarea><br><br>
+
+                    <label>Number of copies :</label><br>
+                    <input type="number" name="copies" id="numcopies" placeholder="Enter number of copies" ><br><br>
+
+                    <label>Type of the game :</label><br>
+                    <input type="text" name="gametype" id="gametype" placeholder="Enter type of the game" ><br><br>
+
+                    <input type="checkbox" name="agreement" id="check">
+                    <span id="agreement">User agreement to terms & services</span>
+                    <br><br>
+    
+                    <button type="submit" id="confirm" onclick="validate()">Confirm</button>
+                    <br>
+                    
+                    <h2 id="message"></h2>
+    
+                    <a id="back-home" href="../../Page Home/HTML/PageHome.html">
+                       <h3>Back to home</h3>
+                    </a>
+
+                </form>
+            </div>    
+        </div>
+
+    </body>
+</html>

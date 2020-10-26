@@ -1,0 +1,853 @@
+/* mobile view */
+@media only screen and (max-width: 767px)
+{
+    *{
+        margin : 0;
+        padding: 0;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    
+    body{
+        background-image: url(../../Assets/homepage/wallpaper.jpg);
+    }
+    
+    .company_logo{
+        height: 50px;
+    }
+    
+    .company_logo img{
+        height: 50px;
+    }
+    
+    nav{
+        width: 100%;
+        height: 50px;
+        background-color : gold;
+    }
+    
+    a{
+        text-decoration: none;
+    }
+    
+    .logo{
+        width: 100%;
+        height: 50px;
+        float: left;
+    }
+    
+    .logo img{
+        height: 50px;
+        width: 200px;
+    }
+    
+    .navbar-item{
+        width: 100%;
+        float: left;
+        display: block;
+        background-color: gold;
+    }
+    
+    .navbar-item li{
+        float: left;
+        list-style: none;
+        width: 70px;
+        text-align: center;
+        line-height: 70px;
+        position: relative;
+        font-size: 15px;
+    }
+    
+    .navbar-item li a{
+        text-align: center;
+        display: block;
+        color : black;
+    }
+    
+    /* dropdown menu */
+    nav ul li ul{    
+        display: none;
+        position: absolute;
+    }
+    
+    nav ul li:hover ul {
+        display: block;
+        z-index: 100;
+    }
+    
+    nav ul li:hover ul.operator-content li.attacker div{
+        background-color: orange;
+    }
+    
+    nav ul li:hover ul.operator-content li.defender div{
+        background-color: blue;
+    }
+    
+    nav ul li:hover ul.map-content li.quick-match{
+        background-color: gold;
+    }
+    
+    nav ul li:hover ul.map-content li.ranked-match{
+        background-color: gold;
+    }
+    
+    nav ul li:hover ul.map-content li.unranked-match{
+        background-color: gold;
+    }
+
+    nav ul .maps .map-content li{
+        width: 120px;
+    }
+    
+    /* mengatur ukuran dari image dan float ke left agar menempel ke arah kiri dari div 
+    penampung gambar dan tulisan attack atau defense */
+    nav ul .operator .operator-content li div img{
+        width: 50px;
+        float: left;
+    }
+    
+    /* mengubah ukuran dari div dropdown menu di operator */
+    nav ul .operator .operator-content li div{
+        width: 150px;
+        height: 50px;
+        line-height: 50px;
+    }
+    
+     /* video promotion content */
+     .video-promotion-content{
+        width: 100%;
+        height: 500px;
+        padding-top: 90px;
+        margin-bottom: 20px;
+    }
+    
+    .video-promotion{
+        width: 100%;
+        height: 20px;
+        object-fit: fill;
+    }
+    
+    .title-season{
+       height: max-content;
+       color: black;
+       background-color: gold;
+       text-align: center;
+    }
+    
+    .video-promotion{
+       width: 100%;
+       height: 400px;
+    }
+    
+    /* Slider Image */
+    .slider-content{
+        width: 100%;
+        height: 450px;
+        background-color: black;
+    }
+
+    .title{
+        color: black;
+        background-color: gold;
+        text-align: center;
+        margin: 10px 0px 10px;
+        width: 100%;
+    }
+
+    
+    #slider {
+        width: 100%;
+        height: 200px;
+        margin: auto;
+        position: relative;
+     }
+      
+     #slider .slides-container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+     }
+      
+     #slider .slide {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: none;
+     }
+      
+     #slider .slide:first-child {
+        display: block;
+     }
+      
+     #slider img {
+        width: 100%;
+        height: 125%;
+        object-fit: fill;
+     }
+     
+     #slider .pager {
+        font-size: 20px;
+        font-weight: 900;
+        color: white;
+        text-align: center;
+        margin-top: 80px;
+     }
+      
+     #slider .arrows a {
+        position: absolute;
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.65);
+        top: 43%;
+        left: 15px;
+        font-weight: 400;
+        line-height: 1;
+        font-size: 42px;
+     }
+      
+     #slider .arrows a:hover {
+        color: #fff;
+     }
+      
+     #slider .arrows a.next {
+        left: initial;
+        right: 15px;
+     }
+    
+     /* New Operator Content */
+    .new-operator-content{
+        width: 100%;
+        height: max-content;
+        background-image: url(../../Assets/homepage/r6-siege-home-operators-bg.jpg.webp);
+    }
+    
+    .title-new-operator{
+        text-align: center;
+        color: black;
+        background-color: gold;
+    }
+    
+    .operators{
+        display: block;
+        object-fit: fill;
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        height: 300px;
+    }
+    
+    .contac-us{
+        width: 100%;
+        height: 250px;
+        background-color: black;
+    }
+    
+    .title-contac h1{
+        width: 100%;
+        height: max-content;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        color: white;
+        font-family: sans-serif;
+        text-align: center;
+    }
+    
+    .social-media-content{
+        width: 100%;
+        height: 30px;
+        margin-bottom: 35px;
+    }
+    
+    .social-media{
+        width: 100%;
+        list-style: none;
+        text-align: center;
+        display: inline-block;
+    }
+    
+    .social-media li{
+        display: inline-block;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .copyright{
+        width: 100%;
+        height: max-content;
+    }
+    
+    .copyright p{
+        margin-left: 10px;
+        margin-right: 10px;
+        color: white;
+        font-family: sans-serif;
+        text-align: center;
+        font-size: 10px;
+    }
+}
+
+/* Ipad / Tablet view */
+@media only screen and (min-width: 768px)
+{
+    *{
+        margin : 0;
+        padding: 0;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+    body{
+        background-image: url(../../Assets/homepage/wallpaper.jpg);
+    }
+
+    .company_logo{
+        color: black;
+        background-color: #232020;
+        height: 60px;
+    }
+    
+    .company_logo img{
+        height: 60px;
+        margin-left: 20px;
+    }
+    
+    nav{
+        width: 100%;
+        height: 70px;
+        background-color : gold;
+    }
+    
+    a{
+        text-decoration: none;
+    }
+    
+    .logo{
+        width: 200px;
+        height: 70px;
+        float: left;
+    }
+    
+    .logo img{
+        height: 60px;
+        width: 200px;
+    }
+    
+    .navbar-item{
+        float: right;
+    }
+    
+    .navbar-item li{
+        float: left;
+        list-style: none;
+        width: 90px;
+        text-align: center;
+        line-height: 70px;
+        position: relative;
+        font-size: large;
+    }
+    
+    .navbar-item li a{
+        display: block;
+        color : black;
+    }
+    
+    /* dropdown menu */
+    nav ul li ul{    
+        display: none;
+        position: absolute;
+    }
+    
+    nav ul li:hover ul {
+        display: block;
+        z-index: 100;
+    }
+    
+    nav ul li:hover ul.operator-content li.attacker div{
+        background-color: orange;
+    }
+    
+    nav ul li:hover ul.operator-content li.defender div{
+        background-color: blue;
+    }
+    
+    nav ul li:hover ul.map-content li.quick-match{
+        background-color: gold;
+    }
+    
+    nav ul li:hover ul.map-content li.ranked-match{
+        background-color: gold;
+    }
+    
+    nav ul li:hover ul.map-content li.unranked-match{
+        background-color: gold;
+    }
+    
+    nav ul .maps .map-content li{
+        width: 130px;
+    }
+
+    /* mengatur ukuran dari image dan float ke left agar menempel ke arah kiri dari div 
+    penampung gambar dan tulisan attack atau defense */
+    nav ul .operator .operator-content li div img{
+        width: 50px;
+        float: left;
+    }
+    
+    /* mengubah ukuran dari div dropdown menu di operator */
+    nav ul .operator .operator-content li div{
+        width: 150px;
+        height: 50px;
+        line-height: 50px;
+    }
+    
+     /* video promotion content */
+     .video-promotion-content{
+        width: 100%;
+        height: 450px;
+        padding-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .video-promotion{
+        min-width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    
+    .title-season{
+       color: black;
+       background-color: gold;
+       text-align: center;
+    }
+    
+    .video-promotion{
+       width: 100%;
+       height: 400px;
+    }
+    
+    /* Slider Image */
+    .slider-content{
+        width: 100%;
+        height: 600px;
+        background-color: black;
+    }
+    
+    .title{
+        color: black;
+        background-color: gold;
+        text-align: center;
+        margin: 10px 0px 10px;
+        width: 100%;
+    }
+    
+    #slider {
+        width: 80%;
+        height: 400px;
+        margin: auto;
+        position: relative;
+     }
+      
+     #slider .slides-container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+     }
+      
+     #slider .slide {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: none;
+     }
+      
+     #slider .slide:first-child {
+        display: block;
+     }
+      
+     #slider img {
+        width: 100%;
+        height: 125%;
+        object-fit: fill;
+     }
+     
+     #slider .pager {
+        font-size: 20px;
+        font-weight: 900;
+        color: white;
+        text-align: center;
+        margin-top: 110px;
+     }
+      
+     #slider .arrows a {
+        position: absolute;
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.65);
+        top: 43%;
+        left: 15px;
+        font-weight: 400;
+        line-height: 1;
+        font-size: 42px;
+     }
+      
+     #slider .arrows a:hover {
+        color: #fff;
+     }
+      
+     #slider .arrows a.next {
+        left: initial;
+        right: 15px;
+     }
+    
+     /* New Operator Content */
+    .new-operator-content{
+        width: 100%;
+        height: max-content;
+        background-image: url(../../Assets/homepage/r6-siege-home-operators-bg.jpg.webp);
+    }
+    
+    .title-new-operator{
+        text-align: center;
+        color: black;
+        background-color: gold;
+    }
+    
+    .operators{
+        display: block;
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 700px;
+        height: 400px;
+    }
+    
+    .contac-us{
+        width: 100%;
+        height: 250px;
+        background-color: black;
+    }
+    
+    .title-contac h1{
+        width: 100%;
+        height: max-content;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        color: white;
+        font-family: sans-serif;
+        text-align: center;
+    }
+    
+    .social-media-content{
+        width: 100%;
+        height: 30px;
+        margin-bottom: 35px;
+    }
+    
+    .social-media{
+        width: 100%;
+        list-style: none;
+        text-align: center;
+        display: inline-block;
+    }
+    
+    .social-media li{
+        display: inline-block;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .copyright{
+        width: 100%;
+        height: max-content;
+    }
+    
+    .copyright p{
+        margin-left: 10px;
+        margin-right: 10px;
+        color: white;
+        font-family: sans-serif;
+        text-align: center;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 1000px)
+{
+    *{
+        margin : 0;
+        padding: 0;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+    body{
+        background-image: url(../../Assets/homepage/wallpaper.jpg);
+    }
+
+    .company_logo{
+        color: black;
+        background-color: #232020;
+        height: 60px;
+    }
+
+    .company_logo img{
+        height: 60px;
+        margin-left: 20px;
+    }
+
+    nav{
+        width: 100%;
+        height: 70px;
+        background-color : gold;
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+    .logo{
+        width: 200px;
+        height: 70px;
+        float: left;
+    }
+
+    .logo img{
+        height: 70px;
+        width: 300px;
+    }
+
+    .navbar-item{
+        float: right;
+    }
+
+    .navbar-item li{
+        float: left;
+        list-style: none;
+        width: 150px;
+        text-align: center;
+        line-height: 70px;
+        position: relative;
+        font-size: large;
+    }
+
+    .navbar-item li a{
+        display: block;
+        color : black;
+    }
+
+    /* dropdown menu */
+    nav ul li ul{    
+        display: none;
+        position: absolute;
+    }
+
+    nav ul li:hover ul {
+        display: block;
+        z-index: 100;
+    }
+
+    nav ul li:hover ul.operator-content li.attacker div{
+        background-color: orange;
+    }
+
+    nav ul li:hover ul.operator-content li.defender div{
+        background-color: blue;
+    }
+
+    nav ul li:hover ul.map-content li.quick-match{
+        background-color: gold;
+    }
+
+    nav ul li:hover ul.map-content li.ranked-match{
+        background-color: gold;
+    }
+
+    nav ul li:hover ul.map-content li.unranked-match{
+        background-color: gold;
+    }
+
+    nav ul .maps .map-content li{
+        width: 150px;
+    }
+
+    /* mengatur ukuran dari image dan float ke left agar menempel ke arah kiri dari div 
+    penampung gambar dan tulisan attack atau defense */
+    nav ul .operator .operator-content li div img{
+        width: 50px;
+        float: left;
+    }
+
+    /* mengubah ukuran dari div dropdown menu di operator */
+    nav ul .operator .operator-content li div{
+        width: 150px;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    /* video promotion content */
+    .video-promotion-content{
+        width: 100%;
+        height: 450px;
+        padding-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .video-promotion{
+        min-width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .title-season{
+    color: black;
+    background-color: gold;
+    text-align: center;
+    }
+
+    .video-promotion{
+    width: 100%;
+    height: 400px;
+    }
+
+    /* Slider Image */
+    .slider-content{
+        width: 100%;
+        height: 600px;
+        background-color: black;
+    }
+
+    .title{
+        color: black;
+        background-color: gold;
+        text-align: center;
+        margin: 10px 0px 10px;
+        width: 100%;
+    }
+
+    #slider {
+        width: 70%;
+        height: 400px;
+        margin: auto;
+        position: relative;
+    }
+    
+    #slider .slides-container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+    
+    #slider .slide {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: none;
+    }
+    
+    #slider .slide:first-child {
+        display: block;
+    }
+    
+    #slider img {
+        width: 100%;
+        height: 125%;
+        object-fit: cover;
+    }
+    
+    #slider .pager {
+        font-size: 20px;
+        font-weight: 900;
+        color: white;
+        text-align: center;
+        margin-top: 110px;
+    }
+    
+    #slider .arrows a {
+        position: absolute;
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.65);
+        top: 43%;
+        left: 15px;
+        font-weight: 400;
+        line-height: 1;
+        font-size: 42px;
+    }
+    
+    #slider .arrows a:hover {
+        color: #fff;
+    }
+    
+    #slider .arrows a.next {
+        left: initial;
+        right: 15px;
+    }
+
+    /* New Operator Content */
+    .new-operator-content{
+        width: 100%;
+        height: max-content;
+        background-image: url(../../Assets/homepage/r6-siege-home-operators-bg.jpg.webp);
+    }
+
+    .title-new-operator{
+        text-align: center;
+        color: black;
+        background-color: gold;
+    }
+
+    .operators{
+        display: block;
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 900px;
+        height: 500px;
+    }
+
+    .contac-us{
+        width: 100%;
+        height: 250px;
+        background-color: black;
+    }
+
+    .title-contac h1{
+        width: 100%;
+        height: max-content;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        color: white;
+        font-family: sans-serif;
+        text-align: center;
+    }
+
+    .social-media-content{
+        width: 100%;
+        height: 50px;
+        margin-bottom: 35px;
+    }
+
+    .social-media{
+        width: 100%;
+        list-style: none;
+        text-align: center;
+        display: inline-block;
+    }
+
+    .social-media li{
+        display: inline-block;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .copyright{
+        width: 100%;
+        height: max-content;
+    }
+
+    .copyright p{
+        color: white;
+        font-family: sans-serif;
+        text-align: center;
+    }
+}

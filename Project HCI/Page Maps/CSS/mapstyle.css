@@ -1,0 +1,526 @@
+/* mobile view */
+@media only screen and (max-width: 767px)
+{
+    *{
+        margin : 0;
+        padding: 0;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    
+    body{
+        background-image: url(../../Assets/homepage/wallpaper.jpg);
+    }
+    
+    .company_logo{
+        height: 50px;
+        background-color: #232020;
+    }
+    
+    .company_logo img{
+        height: 50px;
+    }
+    
+    nav{
+        width: 100%;
+        height: 50px;
+        background-color : gold;
+    }
+    
+    a{
+        text-decoration: none;
+    }
+    
+    .logo{
+        width: 100%;
+        height: 50px;
+        float: left;
+    }
+    
+    .logo img{
+        height: 50px;
+        width: 200px;
+    }
+    
+    .navbar-item{
+        width: 100%;
+        float: left;
+        display: block;
+        background-color: gold;
+    }
+    
+    .navbar-item li{
+        float: left;
+        list-style: none;
+        width: 70px;
+        text-align: center;
+        line-height: 70px;
+        position: relative;
+        font-size: 15px;
+    }
+    
+    .navbar-item li a{
+        text-align: center;
+        display: block;
+        color : black;
+    }
+    
+    /* dropdown menu */
+    nav ul li ul{    
+        display: none;
+        position: absolute;
+    }
+    
+    nav ul li:hover ul {
+        display: block;
+        z-index: 100;
+    }
+    
+    nav ul li:hover ul.operator-content li.attacker div{
+        background-color: orange;
+    }
+    
+    nav ul li:hover ul.operator-content li.defender div{
+        background-color: blue;
+    }
+    
+    nav ul li:hover ul.map-content li.quick-match{
+        background-color: gold;
+    }
+    
+    nav ul li:hover ul.map-content li.ranked-match{
+        background-color: gold;
+    }
+    
+    nav ul li:hover ul.map-content li.unranked-match{
+        background-color: gold;
+    }
+
+    nav ul .maps .map-content li{
+        width: 120px;
+    }
+    
+    /* mengatur ukuran dari image dan float ke left agar menempel ke arah kiri dari div 
+    penampung gambar dan tulisan attack atau defense */
+    nav ul .operator .operator-content li div img{
+        width: 50px;
+        float: left;
+    }
+    
+    /* mengubah ukuran dari div dropdown menu di operator */
+    nav ul .operator .operator-content li div{
+        width: 150px;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    /* maps content */
+    .maps-content{
+        width: 100%;
+        height: auto;
+    }
+    
+    .header-title{
+        width: 100%;
+        height: max-content;
+        margin-top: 20px;
+        background-color: gold;
+        text-align: center;
+        font-size: 30px;
+        margin-top: 80px;
+        margin-bottom: 20px;
+    }
+    
+    .all-maps{
+        width: 100%;
+        height: auto;
+    }
+    
+    .match-map{
+        width: 100%;
+        height: max-content;
+    }
+    
+    .mtitle1{
+        width: max-content;
+        height: max-content;
+        font-size: 30px;
+        color: white;
+        background-color: black;
+        font-family: sans-serif;
+        margin-left: 10px;
+        margin-bottom: 20px;
+    }
+    
+    .maplist1 li{
+        float: left;
+        list-style: none;
+        width: 300px;
+        position: relative;
+        margin-right: 80px;
+        margin-left: 10px;
+    }
+    
+    .maplist1 li img{
+        width: 300px;
+        height: 200px;
+    }
+    
+    .maplist1 li h1{
+        width: max-content;
+        color: white;
+        font-size: 30px;
+        text-align: center;
+        font-family: sans-serif;
+        margin-bottom: 20px;
+    }
+}
+
+/* Ipad / Tablet view */
+@media only screen and (min-width: 768px)
+{
+    *{
+        margin : 0;
+        padding: 0;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+    body{
+        background-image: url(../../Assets/homepage/wallpaper.jpg);
+    }
+
+    .company_logo{
+        color: black;
+        background-color: #232020;
+        height: 60px;
+    }
+    
+    .company_logo img{
+        height: 60px;
+        margin-left: 20px;
+    }
+    
+    nav{
+        width: 100%;
+        height: 70px;
+        background-color : gold;
+    }
+    
+    a{
+        text-decoration: none;
+    }
+    
+    .logo{
+        width: 200px;
+        height: 70px;
+        float: left;
+    }
+    
+    .logo img{
+        height: 60px;
+        width: 200px;
+    }
+    
+    .navbar-item{
+        float: right;
+    }
+    
+    .navbar-item li{
+        float: left;
+        list-style: none;
+        width: 90px;
+        text-align: center;
+        line-height: 70px;
+        position: relative;
+        font-size: large;
+    }
+    
+    .navbar-item li a{
+        display: block;
+        color : black;
+    }
+    
+    /* dropdown menu */
+    nav ul li ul{    
+        display: none;
+        position: absolute;
+    }
+    
+    nav ul li:hover ul {
+        display: block;
+        z-index: 100;
+    }
+    
+    nav ul li:hover ul.operator-content li.attacker div{
+        background-color: orange;
+    }
+    
+    nav ul li:hover ul.operator-content li.defender div{
+        background-color: blue;
+    }
+    
+    nav ul li:hover ul.map-content li.quick-match{
+        background-color: gold;
+    }
+    
+    nav ul li:hover ul.map-content li.ranked-match{
+        background-color: gold;
+    }
+    
+    nav ul li:hover ul.map-content li.unranked-match{
+        background-color: gold;
+    }
+    
+    nav ul .maps .map-content li{
+        width: 130px;
+    }
+
+    /* mengatur ukuran dari image dan float ke left agar menempel ke arah kiri dari div 
+    penampung gambar dan tulisan attack atau defense */
+    nav ul .operator .operator-content li div img{
+        width: 50px;
+        float: left;
+    }
+    
+    /* mengubah ukuran dari div dropdown menu di operator */
+    nav ul .operator .operator-content li div{
+        width: 150px;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    /* maps content */
+    .maps-content{
+        width: 100%;
+        height: auto;
+    }
+    
+    .header-title{
+        width: 100%;
+        height: max-content;
+        margin-top: 20px;
+        background-color: gold;
+        text-align: center;
+        font-size: 30px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .all-maps{
+        width: 100%;
+        height: auto;
+    }
+    
+    .match-map{
+        width: 100%;
+        height: max-content;
+    }
+    
+    .mtitle1{
+        width: max-content;
+        height: max-content;
+        font-size: 30px;
+        color: white;
+        background-color: black;
+        font-family: sans-serif;
+        margin-left: 10px;
+        margin-bottom: 20px;
+    }
+    
+    .maplist1 li{
+        float: left;
+        list-style: none;
+        width: 300px;
+        position: relative;
+        margin-right: 30px;
+        margin-left: 10px;
+    }
+    
+    .maplist1 li img{
+        width: 300px;
+        height: 200px;
+    }
+    
+    .maplist1 li h1{
+        width: max-content;
+        color: white;
+        font-size: 30px;
+        text-align: center;
+        font-family: sans-serif;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (min-width: 1000px)
+{
+    *{
+        margin : 0;
+        padding: 0;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+    body{
+        background-image: url(../../Assets/homepage/wallpaper.jpg);
+    }
+
+    .company_logo{
+        color: black;
+        background-color: #232020;
+        height: 60px;
+    }
+
+    .company_logo img{
+        height: 60px;
+        margin-left: 20px;
+    }
+
+    nav{
+        width: 100%;
+        height: 70px;
+        background-color : gold;
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+    .logo{
+        width: 200px;
+        height: 70px;
+        background-color: gold;
+        float: left;
+    }
+
+    .logo img{
+        height: 70px;
+        width: 300px;
+    }
+
+    .navbar-item{
+        float: right;
+    }
+
+    .navbar-item li{
+        float: left;
+        list-style: none;
+        width: 150px;
+        text-align: center;
+        line-height: 70px;
+        position: relative;
+        font-size: large;
+    }
+
+    .navbar-item li a{
+        display: block;
+        color : black;
+    }
+
+    /* dropdown menu */
+    nav ul li ul{    
+        display: none;
+        position: absolute;
+    }
+
+    /* memunculkan dropdown menu kembali ketika dihover */
+    nav ul li:hover ul {
+        display: block;
+        z-index: 100;
+    }
+
+    nav ul li:hover ul.operator-content li.attacker div{
+        background-color: orange;
+    }
+
+    nav ul li:hover ul.operator-content li.defender div{
+        background-color: blue;
+    }
+
+    nav ul li:hover ul.map-content li.quick-match{
+        background-color: gold;
+    }
+
+    nav ul li:hover ul.map-content li.ranked-match{
+        background-color: gold;
+    }
+
+    nav ul li:hover ul.map-content li.unranked-match{
+        background-color: gold;
+    }
+
+    nav ul .maps .map-content li{
+        width: 150px;
+    }
+
+    /* mengatur ukuran dari image dan float ke left agar menempel ke arah kiri dari div 
+    penampung gambar dan tulisan attack maupun defense */
+    nav ul .operator .operator-content li div img{
+        width: 50px;
+        float: left;
+    }
+
+    /* mengubah ukuran dari div dropdown menu di operator*/
+    nav ul .operator .operator-content li div{
+        width: 150px;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    /* maps content */
+    .maps-content{
+        width: 100%;
+        height: auto;
+    }
+
+    .header-title{
+        width: 100%;
+        height: max-content;
+        margin-top: 20px;
+        background-color: gold;
+        text-align: center;
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+
+    .all-maps{
+        width: 100%;
+        height: auto;
+    }
+
+    .match-map{
+        width: 100%;
+        height: max-content;
+    }
+
+    .mtitle1{
+        width: max-content;
+        height: max-content;
+        font-size: 50px;
+        color: white;
+        background-color: black;
+        font-family: sans-serif;
+        margin-left: 30px;
+        margin-bottom: 20px;
+    }
+
+    .maplist1 li{
+        float: left;
+        list-style: none;
+        width: 300px;
+        position: relative;
+        margin-right: 80px;
+        margin-left: 30px;
+    }
+
+    .maplist1 li img{
+        width: 400px;
+        height: 200px;
+    }
+
+    .maplist1 li h1{
+        width: max-content;
+        color: white;
+        font-size: 30px;
+        text-align: center;
+        font-family: sans-serif;
+        margin-bottom: 20px;
+    }
+}

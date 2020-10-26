@@ -1,0 +1,732 @@
+/* mobile view */
+@media only screen and (max-width: 767px)
+{
+    *{
+        margin : 0;
+        padding: 0;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    
+    body{
+        background-image: url(../../Assets/operator/operator\ background.jpg);
+    }
+    
+    .company_logo{
+        height: 50px;
+        background-color: #232020;
+    }
+    
+    .company_logo img{
+        height: 50px;
+    }
+    
+    nav{
+        width: 100%;
+        height: 50px;
+        background-color : gold;
+    }
+    
+    a{
+        text-decoration: none;
+    }
+    
+    .logo{
+        width: 100%;
+        height: 50px;
+        float: left;
+    }
+    
+    .logo img{
+        height: 50px;
+        width: 200px;
+    }
+    
+    .navbar-item{
+        width: 100%;
+        float: left;
+        display: block;
+        background-color: gold;
+    }
+    
+    .navbar-item li{
+        float: left;
+        list-style: none;
+        width: 70px;
+        text-align: center;
+        line-height: 70px;
+        position: relative;
+        font-size: 15px;
+    }
+    
+    .navbar-item li a{
+        text-align: center;
+        display: block;
+        color : black;
+    }
+    
+    /* dropdown menu */
+    nav ul li ul{    
+        display: none;
+        position: absolute;
+    }
+    
+    nav ul li:hover ul {
+        display: block;
+        z-index: 100;
+    }
+    
+    nav ul li:hover ul.operator-content li.attacker div{
+        background-color: orange;
+    }
+    
+    nav ul li:hover ul.operator-content li.defender div{
+        background-color: blue;
+    }
+    
+    nav ul li:hover ul.map-content li.quick-match{
+        background-color: gold;
+    }
+    
+    nav ul li:hover ul.map-content li.ranked-match{
+        background-color: gold;
+    }
+    
+    nav ul li:hover ul.map-content li.unranked-match{
+        background-color: gold;
+    }
+
+    nav ul .maps .map-content li{
+        width: 120px;
+    }
+    
+    /* mengatur ukuran dari image dan float ke left agar menempel ke arah kiri dari div 
+    penampung gambar dan tulisan attack atau defense */
+    nav ul .operator .operator-content li div img{
+        width: 50px;
+        float: left;
+    }
+    
+    /* mengubah ukuran dari div dropdown menu di operator */
+    nav ul .operator .operator-content li div{
+        width: 150px;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    /* operator content */
+    .operator-select{
+        padding-top: 80px;
+        width: 100%;
+        height: 750px;
+        padding-bottom: 10px;
+    }
+
+    .operator-select-title{
+        text-align: center;
+        width: 100%;
+        color: black;
+        background-color: gold;
+        height: 50px;
+    }
+
+    .attacker-title{
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        font-size: 30px;
+        color: white;
+        font-family: sans-serif;
+    }
+
+    #operator-name{
+        width: max-content;
+        margin-left: 10px;
+        margin-bottom: 20px;
+        font-size: 20px;
+        color: white;
+        background-color: black;
+        font-family: sans-serif;
+    }
+
+    .operator-content {
+        width: 100%;
+        height: 600px;
+    }
+
+    .operator-item{
+        margin-left: 20px;
+    }
+
+    ul.row1{
+        float: left;
+        width: 65px;
+    }
+
+    ul.row2{
+        float: left;
+        width: 65px;
+    }
+
+    ul.row3{
+        float: left;
+        width: 65px;
+    }
+
+    ul.row4{
+        float: left;
+        width: 65px;
+    }
+
+    .row1 li{
+        float: left;
+        list-style: none;
+        width: 90px;
+        text-align: center;
+        line-height: 70px;
+        position: relative;
+        font-size: large;
+    }
+
+    .row2 li{
+        float: left;
+        list-style: none;
+        width: 100px;
+        text-align: center;
+        line-height: 70px;
+        position: relative;
+        font-size: large;
+    }
+
+    .row3 li{
+        float: left;
+        list-style: none;
+        width: 100px;
+        text-align: center;
+        line-height: 70px;
+        position: relative;
+        font-size: large;
+    }
+
+    .row4 li{
+        float: left;
+        list-style: none;
+        width: 100px;
+        text-align: center;
+        line-height: 70px;
+        position: relative;
+        font-size: large;
+    }
+
+    li img{
+        width: 60px;
+        height: 60px;
+    }
+
+    .operator-change{
+        float: right;
+    }
+
+    #operator-image{
+        display: none;
+    }
+    .operator-stats{
+        width: 100%;
+        height: fit-content;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        background-color: gold;
+    }
+
+    #armor, #speed, #primary-weapon, #secondary-weapon, #primary-gadget, #secondary-gadget{
+        font-family: sans-serif;
+        margin-left: 20px;
+        font-size: 15px;
+    }
+}
+
+/* Ipad / Tablet view */
+@media only screen and (min-width: 768px)
+{
+    *{
+        margin : 0;
+        padding: 0;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+    body{
+        background-image: url(../../Assets/operator/operator\ background.jpg);
+    }
+
+    .company_logo{
+        color: black;
+        background-color: #232020;
+        height: 60px;
+    }
+    
+    .company_logo img{
+        height: 60px;
+        margin-left: 20px;
+    }
+    
+    nav{
+        width: 100%;
+        height: 70px;
+        background-color : gold;
+    }
+    
+    a{
+        text-decoration: none;
+    }
+    
+    .logo{
+        width: 200px;
+        height: 70px;
+        float: left;
+    }
+    
+    .logo img{
+        height: 60px;
+        width: 200px;
+    }
+    
+    .navbar-item{
+        float: right;
+    }
+    
+    .navbar-item li{
+        float: left;
+        list-style: none;
+        width: 90px;
+        text-align: center;
+        line-height: 70px;
+        position: relative;
+        font-size: large;
+    }
+    
+    .navbar-item li a{
+        display: block;
+        color : black;
+    }
+    
+    /* dropdown menu */
+    nav ul li ul{    
+        display: none;
+        position: absolute;
+    }
+    
+    nav ul li:hover ul {
+        display: block;
+        z-index: 100;
+    }
+    
+    nav ul li:hover ul.operator-content li.attacker div{
+        background-color: orange;
+    }
+    
+    nav ul li:hover ul.operator-content li.defender div{
+        background-color: blue;
+    }
+    
+    nav ul li:hover ul.map-content li.quick-match{
+        background-color: gold;
+    }
+    
+    nav ul li:hover ul.map-content li.ranked-match{
+        background-color: gold;
+    }
+    
+    nav ul li:hover ul.map-content li.unranked-match{
+        background-color: gold;
+    }
+    
+    nav ul .maps .map-content li{
+        width: 130px;
+    }
+
+    /* mengatur ukuran dari image dan float ke left agar menempel ke arah kiri dari div 
+    penampung gambar dan tulisan attack atau defense */
+    nav ul .operator .operator-content li div img{
+        width: 50px;
+        float: left;
+    }
+    
+    /* mengubah ukuran dari div dropdown menu di operator */
+    nav ul .operator .operator-content li div{
+        width: 150px;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    /* operator content */
+    .operator-select{
+        padding-top: 20px;
+        width: 100%;
+        height: 500px;
+        padding-bottom: 10px;
+    }
+
+    .operator-select-title{
+        text-align: center;
+        width: 100%;
+        color: black;
+        background-color: gold;
+        height: 50px;
+    }
+
+    .attacker-title{
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        color: white;
+        font-size: 50px;
+        font-family: sans-serif;
+    }
+
+    #operator-name{
+        width: max-content;
+        margin-left: 10px;
+        margin-bottom: 30px;
+        color: white;
+        font-size: 40px;
+        font-family: sans-serif;
+        background-color: black;
+    }
+
+    .operator-content {
+        width: 100%;
+        height: 300px;
+    }
+
+    .operator-item{
+        margin-left: 20px;
+    }
+
+    ul.row1{
+        float: left;
+        width: 55%;
+    }
+
+    ul.row2{
+        float: left;
+        width: 55%;
+    }
+
+    ul.row3{
+        float: left;
+        width: 55%;
+    }
+
+    ul.row4{
+        float: left;
+        width: 55%;
+    }
+
+    .row1 li{
+        float: left;
+        list-style: none;
+        width: 55px;
+        text-align: center;
+        line-height: 30px;
+        position: relative;
+    }
+
+    .row2 li{
+        float: left;
+        list-style: none;
+        width: 55px;
+        text-align: center;
+        line-height: 30px;
+        position: relative;
+    }
+
+    .row3 li{
+        float: left;
+        list-style: none;
+        width: 55px;
+        text-align: center;
+        line-height: 30px;
+        position: relative;
+    }
+
+    .row4 li{
+        float: left;
+        list-style: none;
+        width: 55px;
+        text-align: center;
+        line-height: 30px;
+        position: relative;
+    }
+
+    li img{
+        width: 50px;
+        height: 50px;
+    }
+
+    .operator-change{
+        float: right;
+    }
+
+    #operator-image{
+        width: 300px;
+        height: 300px;
+        padding-right: 0px;
+    }
+    .operator-stats{
+        width: 100%;
+        height: max-content;
+        margin-top: 30px;
+        background-color: gold;
+    }
+
+    #armor, #speed, #primary-weapon, #secondary-weapon, #primary-gadget, #secondary-gadget{
+        font-family: sans-serif;
+        margin-left: 20px;
+    }
+}
+
+@media only screen and (min-width: 1000px)
+{
+    *{
+        margin : 0;
+        padding: 0;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+    body{
+        background-image: url(../../Assets/operator/operator\ background.jpg);
+    }
+
+    .company_logo{
+        color: black;
+        background-color: #232020;
+        height: 60px;
+    }
+
+    .company_logo img{
+        height: 60px;
+        margin-left: 20px;
+    }
+
+    nav{
+        width: 100%;
+        height: 70px;
+        background-color : gold;
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+    .logo{
+        width: 200px;
+        height: 70px;
+        float: left;
+    }
+
+    .logo img{
+        height: 70px;
+        width: 300px;
+    }
+
+    .navbar-item{
+        float: right;
+    }
+
+    .navbar-item li{
+        float: left;
+        list-style: none;
+        width: 150px;
+        text-align: center;
+        line-height: 70px;
+        position: relative;
+        font-size: large;
+    }
+
+    .navbar-item li a{
+        display: block;
+        color : black;
+    }
+
+    /* dropdown menu */
+    nav ul li ul{    
+        display: none;
+        position: absolute;
+    }
+
+    nav ul li:hover ul {
+        display: block;
+        z-index: 100;
+    }
+
+    .attacker{
+        color: white;
+    }
+
+    nav ul li:hover ul.operator-content li.attacker div{
+        background-color: orange;
+    }
+
+    nav ul li:hover ul.operator-content li.defender div{
+        background-color: blue;
+    }
+
+    nav ul li:hover ul.map-content li.quick-match{
+        background-color: gold;
+    }
+
+    nav ul li:hover ul.map-content li.ranked-match{
+        background-color: gold;
+    }
+
+    nav ul li:hover ul.map-content li.unranked-match{
+        background-color: gold;
+    }
+
+    nav ul .maps .map-content li{
+        width: 150px;
+    }
+
+    /* mengatur ukuran dari image dan float ke left agar menempel ke arah kiri dari div 
+    penampung gambar dan tulisan attack atau defense */
+    nav ul .operator .operator-content li div img{
+        height: 50px;
+        width: 50px;
+        float: left;
+    }
+
+    /* mengubah ukuran dari div dropdown menu di operator */
+    nav ul .operator .operator-content li div{
+        width: 150px;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    /* operator content */
+    .operator-select{
+        padding-top: 20px;
+        width: 100%;
+        height: 750px;
+        padding-bottom: 10px;
+    }
+
+    .operator-select-title{
+        text-align: center;
+        width: 100%;
+        color: black;
+        background-color: gold;
+        height: 50px;
+    }
+
+    .attacker-title{
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        color: white;
+        font-size: 50px;
+        font-family: sans-serif;
+    }
+
+    #operator-name{
+        width: max-content;
+        margin-left: 10px;
+        margin-bottom: 30px;
+        color: white;
+        font-size: 40px;
+        font-family: sans-serif;
+        background-color: black;
+    }
+
+    .operator-content {
+        width: 100%;
+        height: 450px;
+    }
+
+    .operator-item{
+        margin-left: 20px;
+    }
+
+    ul.row1{
+        float: left;
+        width: 55%;
+    }
+
+    ul.row2{
+        float: left;
+        width: 55%;
+    }
+
+    ul.row3{
+        float: left;
+        width: 55%;
+    }
+
+    ul.row4{
+        float: left;
+        width: 55%;
+    }
+
+    .row1 li{
+        float: left;
+        list-style: none;
+        width: 100px;
+        text-align: center;
+        line-height: 70px;
+        position: relative;
+        font-size: large;
+    }
+
+    .row2 li{
+        float: left;
+        list-style: none;
+        width: 100px;
+        text-align: center;
+        line-height: 70px;
+        position: relative;
+        font-size: large;
+    }
+
+    .row3 li{
+        float: left;
+        list-style: none;
+        width: 100px;
+        text-align: center;
+        line-height: 70px;
+        position: relative;
+        font-size: large;
+    }
+
+    .row4 li{
+        float: left;
+        list-style: none;
+        width: 100px;
+        text-align: center;
+        line-height: 70px;
+        position: relative;
+        font-size: large;
+    }
+
+    li img{
+        width: 85px;
+        height: 80px;
+    }
+
+    .operator-change{
+        float: right;
+    }
+
+    #operator-image{
+        width: 590px;
+        height: 555px;
+        padding-right: 0px;
+    }
+    .operator-stats{
+        width: 55%;
+        height: fit-content;
+        background-color: gold;
+    }
+
+    #armor, #speed, #primary-weapon, #secondary-weapon, #primary-gadget, #secondary-gadget{
+        font-family: sans-serif;
+        margin-left: 20px;
+    }
+}
